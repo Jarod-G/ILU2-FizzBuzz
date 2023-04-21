@@ -5,15 +5,16 @@ public class FizzBuzz {
 	public static final String UN = "1";
 	public static final String DEUX = "2";
 	public static final String FIZZ = "fizz";
+	public static final String BUZZ = "buzz";
 	
 	public String fizzBuzz(int entree) {
-		if(entree == 1) {
-			return UN;
+		if(entree == 3) {
+			return FIZZ;
 		}
-		if(entree == 2) {
-			return DEUX;
+		if(entree == 5) {
+			return BUZZ;
 		}
-		return FIZZ;
+		return Integer.toString(entree);
 	}
 	
 }
