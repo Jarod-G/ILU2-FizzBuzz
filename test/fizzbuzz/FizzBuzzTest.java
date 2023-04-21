@@ -27,20 +27,27 @@ class FizzBuzzTest {
 	
 	@Test
 	void test_fb3() {
-		assertEquals("fizz", fb.fizzBuzz(3));
+		assertEquals("Fizz", fb.fizzBuzz(3));
 	}
 	
 	@Test
 	void test_fb_nombres() {
 		assertEquals("4", fb.fizzBuzz(4));
 		assertEquals("13", fb.fizzBuzz(13));
-		assertEquals("400", fb.fizzBuzz(400));
+		assertEquals("401", fb.fizzBuzz(401));
 	}
 	
 	@Test
 	void test_fb5() {
-		assertEquals("buzz", fb.fizzBuzz(5));
+		assertEquals("Buzz", fb.fizzBuzz(5));
 	}
 	
+	@Test
+	void test_fb6() {
+		assertEquals("Fizz", fb.fizzBuzz(6));
+		assertEquals("Buzz", fb.fizzBuzz(400));
+		assertEquals("Fizz", fb.fizzBuzz(13*3));
+		assertEquals("Buzz", fb.fizzBuzz(13*5));
+	}
 	
 }

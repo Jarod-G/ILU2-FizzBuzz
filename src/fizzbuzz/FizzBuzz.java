@@ -2,17 +2,15 @@ package fizzbuzz;
 
 public class FizzBuzz {
 	
-	public static final String UN = "1";
-	public static final String DEUX = "2";
-	public static final String FIZZ = "fizz";
-	public static final String BUZZ = "buzz";
+	private int[] nbSpeciaux = { 3, 5 };
+	private String[] valeurSpeciales = { "Fizz", "Buzz" };
 	
 	public String fizzBuzz(int entree) {
-		if(entree == 3) {
-			return FIZZ;
-		}
-		if(entree == 5) {
-			return BUZZ;
+		for(int i = 0; i < nbSpeciaux.length; i++)
+		{
+			if(entree % nbSpeciaux[i] == 0) {
+				return valeurSpeciales[i];
+			}
 		}
 		return Integer.toString(entree);
 	}
